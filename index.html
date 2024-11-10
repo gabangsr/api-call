@@ -10,63 +10,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Uncial+Antiqua&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <header>
         <div class="title-container">
             <img src="./images/Switch_Axe_Icon.png" alt="Logo" class="logo">
             <h1>Ultimate Bravery Switch Axe</h1>
         </div>
-        <div class="search-container">
-            <button onclick="BraverySwitchAxe()">Randomize</button>
-        </div>
+        <button onclick="BraverySwitchAxe()">Randomize</button>
     </header>
     <main>
-        <div class="card monster-card" id="monsterCard">
-            <h2>Loading...</h2>
-            <p id="monsterDescription">Description loading...</p>
-        </div>
-
-        <div class="card weapon-card" id="weaponCard1">
-            <h2>Loading...</h2>
-            <img id="weaponImage1" src="" alt="Weapon Image">
-        </div>
-
-        <div class="armor-container">
-            <div class="card armor-card" id="armorCard1">
-                <h2>Loading...</h2>
-                <img id="armorImage1" src="" alt="Armor Image">
-            </div>
-            <div class="card armor-card" id="armorCard2">
-                <h2>Loading...</h2>
-                <img id="armorImage2" src="" alt="Armor Image">
-            </div>
-            <div class="card armor-card" id="armorCard3">
-                <h2>Loading...</h2>
-                <img id="armorImage3" src="" alt="Armor Image">
-            </div>
-            <div class="card armor-card" id="armorCard4">
-                <h2>Loading...</h2>
-                <img id="armorImage4" src="" alt="Armor Image">
-            </div>
-            <div class="card armor-card" id="armorCard5">
-                <h2>Loading...</h2>
-                <img id="armorImage5" src="" alt="Armor Image">
-            </div>
-        </div>
-
         <div id="disclaimer" class="disclaimer">
-            <img src="./images/mhw-logo.png" alt="Logo w-60 h-100" class="logo w-80 h-100">
-            <h1>Welcome! </h1>
-            <p>This website features random monster and weapon data from Monster Hunter World. </p>
+            <img src="./images/mhw-logo.png" alt="Logo w-80 h-100" class="logo">
+            <h1>Welcome!</h1>
+            <p>This website features random monster and weapon data from Monster Hunter World.</p>
             <p>It will randomize between a monster you will hunt, and the equipemnt you will use, with the main being Switch Axe.</p>
             <p>This is also meant for veteran hunters who want a challenge, or just want to use switch axe. </p>
             <p>However, some items may take time loading, and not present images due to unforseem circumstances. </p>
             <p>Click proceed to get hunting!</p>
             <button onclick="showMainContent()">Proceed</button>
-        </div>
 
+        </div>
+        <div class="card monster-card" id="monsterCard">
+            <h2>Loading...</h2>
+            <p id="monsterDescription">Description loading...</p>
+        </div>
+        <div class="card weapon-card" id="weaponCard1">
+            <h2>Loading...</h2>
+            <img id="weaponImage1" src="" alt="Weapon Image">
+        </div>
+        
+        <div class="armor-container">
+            <div class="card armor-card" id="armorCard1"><h2>Loading...</h2><img id="armorImage1" src="" alt="Armor Image"></div>
+            <div class="card armor-card" id="armorCard2"><h2>Loading...</h2><img id="armorImage2" src="" alt="Armor Image"></div>
+            <div class="card armor-card" id="armorCard3"><h2>Loading...</h2><img id="armorImage3" src="" alt="Armor Image"></div>
+            <div class="card armor-card" id="armorCard4"><h2>Loading...</h2><img id="armorImage4" src="" alt="Armor Image"></div>
+            <div class="card armor-card" id="armorCard5"><h2>Loading...</h2><img id="armorImage5" src="" alt="Armor Image"></div>
+        </div>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
 </html>

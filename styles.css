@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-p{
+p {
     font-size: 24px;
 }
 
@@ -110,6 +110,7 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .monster-card h2 {
@@ -120,7 +121,7 @@ main {
 }
 
 .monster-card p {
-    font-size: 40px;
+    font-size: 30px;
     color: #ffeb3b;
 
 }

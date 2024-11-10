@@ -5,6 +5,8 @@ function showMainContent() {
 }
 
 function BraverySwitchAxe() {
+
+    //Weapons
     fetch('https://mhw-db.com/weapons')
         .then(response => response.json())
         .then(data => {
@@ -17,6 +19,7 @@ function BraverySwitchAxe() {
         })
         .catch(error => console.error('Error fetching weapon data:', error));
 
+    //Armor    
     fetch('https://mhw-db.com/armor')
         .then(response => response.json())
         .then(data => {
@@ -33,6 +36,7 @@ function BraverySwitchAxe() {
         })
         .catch(error => console.error('Error fetching armor data:', error));
 
+    //Monsters
     fetch('https://mhw-db.com/monsters')
         .then(response => response.json())
         .then(data => {
@@ -44,7 +48,6 @@ function BraverySwitchAxe() {
         })
         .catch(error => console.error('Error fetching monster data:', error));
 }
-
 BraverySwitchAxe();
 
 

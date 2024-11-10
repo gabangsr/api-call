@@ -1,3 +1,9 @@
+function showMainContent() {
+    document.getElementById('disclaimer').style.display = 'none';
+    document.getElementById('mainContent').style.display = 'block';
+    BraverySwitchAxe(); 
+}
+
 function BraverySwitchAxe() {
     fetch('https://mhw-db.com/weapons')
         .then(response => response.json())
@@ -40,3 +46,5 @@ function BraverySwitchAxe() {
 }
 
 BraverySwitchAxe();
+
+
